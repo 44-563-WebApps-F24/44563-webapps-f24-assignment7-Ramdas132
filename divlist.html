@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html> <head> <style>
+<html> 
+    <head>
+        <title>divlist page</title>
+<style>
     .flex-container {
       display: flex;  flex-direction:row;
       background-color: red;
@@ -19,32 +22,32 @@
 	}
 </style></head>
 <body>
+    <h2>Ramdas builds list with divs</h2>
+
+
+        <input type="text"  id="inputText">
+		<button onclick="makeNewDiv()">Add end</button>
+        <br><br>
 		<div class="flex-container" id="target">
-		  <div class="queue">row item 1</div>   
-		  <div class="queue">row item 2</div>  
-		  <div class="queue">row item 3</div>  
+		  <div class="divlist">row item 1</div>   
+		  <div class="divlist">row item 2</div>  
+		  <div class="divlist">row item 3</div>  
 		</div>
-	
-	<p> Press the button to create an new element of type div and then add it to the container.
-		</p>
-		<button onclick="makeNewDiv()">Add one</button>
+        
 </body>
 <script>
 	function makeNewDiv(){
-		/* make the div and its text */
 		let element = document.createElement("div")
-		element.innerHTML = "an item after 3"
-		element.style.color = "orange"
-		element.className = "queue"
+		element.innerHTML = document.getElementById("inputText").value;
+		element.style.color = "green"
+		element.className = "divlist"
 
-		/* add it to the container */
 		let container = document.getElementById('target')
-		container.insertBefore(element, container.firstChild)
-		//container.appendChild(element)
-		let items = document.getElementsByClassName('queue')
-		let last = items.length - 1
-		console.log("last is " + last)
-		items[last].remove()	
+		container.appendChild(element)
+		let items = document.getElementsByClassName('divlist')
+		let first = 0;
+		console.log("last is " + first)
+		items[first].remove()	
 	}
 </script>
 </html>	
