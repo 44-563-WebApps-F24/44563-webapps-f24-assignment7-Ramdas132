@@ -19,73 +19,150 @@
     <p class="alert alert-success"><b>Click on the locations to find rare animals, watch out for the lion</b></p>
     <p class="alert alert-info" id="locations"><b>Number of locations checked is zero</b></p>
     <p class="alert alert-primary" id="score"><b>Score is zero</b></p>
-    <p class="alert alert-danger"><b>Click for help</b></p>
-    <p class="alert alert-warning" id="help"><b>Help report</b></p>
+    <p class="alert alert-danger" id="help-result" onclick="help()"><b>Click for help</b></p>
+    <p class="alert alert-warning" id="help" ><b>Help report</b></p>
   
    <br>
 
     <div class="row">
-        <div class="col-2"><img src="tree.jpg" class="img-fluid" alt="Tree Image"></div>
-        <div class="col-2"><img src="tree.jpg" class="img-fluid" alt="Tree Image"></div>
-        <div class="col-2"><img src="tree.jpg" class="img-fluid" alt="Tree Image"></div>
-        <div class="col-2"><img src="tree.jpg" class="img-fluid" alt="Tree Image"></div>
-        <div class="col-2"><img src="tree.jpg" class="img-fluid" alt="Tree Image"></div>
-        <div class="col-2"><img src="tree.jpg" class="img-fluid" alt="Tree Image"></div>
+        <div class="col-2"><img id="img0" src="tree.jpg" class="img-fluid" alt="Tree Image" onclick="check(0)" /></div>
+        <div class="col-2"><img id="img1" src="tree.jpg" class="img-fluid" alt="Tree Image" onclick="check(1)" /></div>
+        <div class="col-2"><img id="img2" src="tree.jpg" class="img-fluid" alt="Tree Image" onclick="check(2)" /></div>
+        <div class="col-2"><img id="img3" src="tree.jpg" class="img-fluid" alt="Tree Image" onclick="check(3)" /></div>
+        <div class="col-2"><img id="img4" src="tree.jpg" class="img-fluid" alt="Tree Image" onclick="check(4)" /></div>
+        <div class="col-2"><img id="img5" src="tree.jpg" class="img-fluid" alt="Tree Image" onclick="check(5)" /></div>
     </div>
     <br>
     
     <div class="row">
-        <div class="col-2"><img src="tree.jpg" class="img-fluid" alt="Tree Image"></div>
-        <div class="col-2"><img src="tree.jpg" class="img-fluid" alt="Tree Image"></div>
-        <div class="col-2"><img src="tree.jpg" class="img-fluid" alt="Tree Image"></div>
-        <div class="col-2"><img src="tree.jpg" class="img-fluid" alt="Tree Image"></div>
-        <div class="col-2"><img src="tree.jpg" class="img-fluid" alt="Tree Image"></div>
-        <div class="col-2"><img src="tree.jpg" class="img-fluid" alt="Tree Image"></div>
+        <div class="col-2"><img id="img6" src="tree.jpg" class="img-fluid" alt="Tree Image" onclick="check(6)" /></div>
+        <div class="col-2"><img id="img7" src="tree.jpg" class="img-fluid" alt="Tree Image" onclick="check(7)" /></div>
+        <div class="col-2"><img id="img8" src="tree.jpg" class="img-fluid" alt="Tree Image" onclick="check(8)" /></div>
+        <div class="col-2"><img id="img9" src="tree.jpg" class="img-fluid" alt="Tree Image" onclick="check(9)" /></div>
+        <div class="col-2"><img id="img10" src="tree.jpg" class="img-fluid" alt="Tree Image" onclick="check(10)" /></div>
+        <div class="col-2"><img id="img11" src="tree.jpg" class="img-fluid" alt="Tree Image" onclick="check(11)" /></div>
     </div>
     <br>
     
     <div class="row">
-        <div class="col-2"><img src="tree.jpg" class="img-fluid" alt="Tree Image"></div>
-        <div class="col-2"><img src="tree.jpg" class="img-fluid" alt="Tree Image"></div>
-        <div class="col-2"><img src="tree.jpg" class="img-fluid" alt="Tree Image"></div>
-        <div class="col-2"><img src="tree.jpg" class="img-fluid" alt="Tree Image"></div>
-        <div class="col-2"><img src="tree.jpg" class="img-fluid" alt="Tree Image"></div>
-        <div class="col-2"><img src="tree.jpg" class="img-fluid" alt="Tree Image"></div>
+        <div class="col-2"><img id="img12" src="tree.jpg" class="img-fluid" alt="Tree Image" onclick="check(12)" /></div>
+        <div class="col-2"><img id="img13" src="tree.jpg" class="img-fluid" alt="Tree Image" onclick="check(13)" /></div>
+        <div class="col-2"><img id="img14" src="tree.jpg" class="img-fluid" alt="Tree Image" onclick="check(14)" /></div>
+        <div class="col-2"><img id="img15" src="tree.jpg" class="img-fluid" alt="Tree Image" onclick="check(15)" /></div>
+        <div class="col-2"><img id="img16" src="tree.jpg" class="img-fluid" alt="Tree Image" onclick="check(16)" /></div>
+        <div class="col-2"><img id="img17" src="tree.jpg" class="img-fluid" alt="Tree Image" onclick="check(17)" /></div>
     </div>
     <br>
   
     <div class="row">
-        <div class="col-2"><img src="tree.jpg" class="img-fluid" alt="Tree Image"></div>
-        <div class="col-2"><img src="tree.jpg" class="img-fluid" alt="Tree Image"></div>
-        <div class="col-2"><img src="tree.jpg" class="img-fluid" alt="Tree Image"></div>
-        <div class="col-2"><img src="tree.jpg" class="img-fluid" alt="Tree Image"></div>
-        <div class="col-2"><img src="tree.jpg" class="img-fluid" alt="Tree Image"></div>
-        <div class="col-2"><img src="tree.jpg" class="img-fluid" alt="Tree Image"></div>
+        <div class="col-2"><img id="img18" src="tree.jpg" class="img-fluid" alt="Tree Image" onclick="check(18)" /></div>
+        <div class="col-2"><img id="img19" src="tree.jpg" class="img-fluid" alt="Tree Image" onclick="check(19)" /></div>
+        <div class="col-2"><img id="img20" src="tree.jpg" class="img-fluid" alt="Tree Image" onclick="check(20)" /></div>
+        <div class="col-2"><img id="img21" src="tree.jpg" class="img-fluid" alt="Tree Image" onclick="check(21)" /></div>
+        <div class="col-2"><img id="img22" src="tree.jpg" class="img-fluid" alt="Tree Image" onclick="check(22)" /></div>
+        <div class="col-2"><img id="img23" src="tree.jpg" class="img-fluid" alt="Tree Image" onclick="check(23)" /></div>
     </div>
     <br>
     
     <div class="row">
-        <div class="col-2"><img src="tree.jpg" class="img-fluid" alt="Tree Image"></div>
-        <div class="col-2"><img src="tree.jpg" class="img-fluid" alt="Tree Image"></div>
-        <div class="col-2"><img src="tree.jpg" class="img-fluid" alt="Tree Image"></div>
-        <div class="col-2"><img src="tree.jpg" class="img-fluid" alt="Tree Image"></div>
-        <div class="col-2"><img src="tree.jpg" class="img-fluid" alt="Tree Image"></div>
-        <div class="col-2"><img src="tree.jpg" class="img-fluid" alt="Tree Image"></div>
+        <div class="col-2"><img id="img24" src="tree.jpg" class="img-fluid" alt="Tree Image" onclick="check(24)" /></div>
+        <div class="col-2"><img id="img25" src="tree.jpg" class="img-fluid" alt="Tree Image" onclick="check(25)" /></div>
+        <div class="col-2"><img id="img26" src="tree.jpg" class="img-fluid" alt="Tree Image" onclick="check(26)" /></div>
+        <div class="col-2"><img id="img27" src="tree.jpg" class="img-fluid" alt="Tree Image" onclick="check(27)" /></div>
+        <div class="col-2"><img id="img28" src="tree.jpg" class="img-fluid" alt="Tree Image" onclick="check(28)" /></div>
+        <div class="col-2"><img id="img29" src="tree.jpg" class="img-fluid" alt="Tree Image" onclick="check(29)" /></div>
     </div>
     <br>
   
     <div class="row">
-        <div class="col-2"><img src="tree.jpg" class="img-fluid" alt="Tree Image"></div>
-        <div class="col-2"><img src="tree.jpg" class="img-fluid" alt="Tree Image"></div>
-        <div class="col-2"><img src="tree.jpg" class="img-fluid" alt="Tree Image"></div>
-        <div class="col-2"><img src="tree.jpg" class="img-fluid" alt="Tree Image"></div>
-        <div class="col-2"><img src="tree.jpg" class="img-fluid" alt="Tree Image"></div>
-        <div class="col-2"><img src="tree.jpg" class="img-fluid" alt="Tree Image"></div>
+        <div class="col-2"><img id="img30" src="tree.jpg" class="img-fluid" alt="Tree Image" onclick="check(30)" /></div>
+        <div class="col-2"><img id="img31" src="tree.jpg" class="img-fluid" alt="Tree Image" onclick="check(31)" /></div>
+        <div class="col-2"><img id="img32" src="tree.jpg" class="img-fluid" alt="Tree Image" onclick="check(32)" /></div>
+        <div class="col-2"><img id="img33" src="tree.jpg" class="img-fluid" alt="Tree Image" onclick="check(33)" /></div>
+        <div class="col-2"><img id="img34" src="tree.jpg" class="img-fluid" alt="Tree Image" onclick="check(34)" /></div>
+        <div class="col-2"><img id="img35" src="tree.jpg" class="img-fluid" alt="Tree Image" onclick="check(35)" /></div>
     </div>
     <br>
     </div>
     
+<script>
+   
+let ids = ["img0", "img1", "img2", "img3", "img4", "img5", "img6", "img7", "img8", "img9", 
+           "img10", "img11", "img12", "img13", "img14", "img15", "img16", "img17", "img18", "img19",
+           "img20", "img21", "img22", "img23", "img24", "img25", "img26", "img27", "img28", "img29",
+           "img30", "img31", "img32", "img33", "img34", "img35"];
+let score = 0;
+let locationsVisited = 0;
+let lastLocation = 0;
+let zebraLocations = [1, 8, 12, 22, 34];
+let lionLocation = 14;
+let gameOver = false;
 
+
+function check(position) {
+   
+    if (gameOver) return;
+    let imageId = ids[position];
+    let imageElement = document.getElementById(imageId);
+    if (position === lionLocation) {
+        imageElement.src = "lion.jpg";
+        gameOver = true;
+        score -= 2;
+        alert("Game Over! You found the lion.");
+    } else if (zebraLocations.includes(position)) {
+
+        imageElement.src = "zebra.jpg";
+        score += 4;
+    } else {
+
+        imageElement.src = "elephant.jpg";
+        score += 1;
+    }
+
+    locationsVisited++;
+
+    lastLocation = position;
+    document.getElementById("score").innerText = "Score: " + score;
+    document.getElementById("locations").innerText = "Locations Visited: " + locationsVisited;
+}
+
+
+function help() {
+    
+    let lastRow = Math.floor(lastLocation / 6);
+    let lastCol = lastLocation % 6;
+
+
+    let lionRow = Math.floor(lionLocation / 6);
+    let lionCol = lionLocation % 6;
+
+
+    let closestLocations = [
+        (lastLocation - 1 + 36) % 36,  
+        (lastLocation + 1) % 36,       
+        (lastLocation - 6 + 36) % 36,  
+        (lastLocation + 6) % 36        
+    ];
+
+    for (let i = 0; i < closestLocations.length; i++) {
+        if (zebraLocations.includes(closestLocations[i])) {
+            document.getElementById("help-result").innerText = "I see stripes";
+            return "I see stripes";
+        }
+    }
+
+
+    if (Math.abs(lastRow - lionRow) <= 1 && Math.abs(lastCol - lionCol) <= 1) {
+        document.getElementById("help-result").innerText = "Rawr";
+        return "Rawr";
+    }
+
+  
+    document.getElementById("help-result").innerText = "Its grey";
+    return "Its grey";
+}
+
+</script>
    
   
 
