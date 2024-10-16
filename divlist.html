@@ -25,8 +25,10 @@
     <h2>Ramdas builds list with divs</h2>
 
 
-        <input type="text"  id="inputText">
-		<button onclick="makeNewDiv()">Add end</button>
+        <input type="text"  id="inputText"><br><br>
+		<button onclick="makeNewDiv()">Add end</button><br><br>
+        <button onclick="addFront()">Add front</button><br><br>
+        <button onclick="del()">Remove</button>
         <br><br>
 		<div class="flex-container" id="target">
 		  <div class="divlist">row item 1</div>   
@@ -34,7 +36,7 @@
 		  <div class="divlist">row item 3</div>  
 		</div>
         
-</body>
+
 <script>
 	function makeNewDiv(){
 		let element = document.createElement("div")
@@ -49,5 +51,34 @@
 		console.log("last is " + first)
 		items[first].remove()	
 	}
+
+    function del() {
+        let divListItems = document.getElementsByClassName("divlist")
+        let len=divListItems.length
+        let index=Math.floor(len/2)
+        if(len>0)
+    {
+        divListItems[index].remove()
+    }
+    else{
+        alert("no items list is empty")
+    }
+    }
+
+    function addFront()
+    {
+        let element = document.createElement("div")
+		element.innerHTML = document.getElementById("inputText").value;
+		element.style.color = "green"
+		element.className = "divlist"
+
+		let container = document.getElementById('target')
+		container.insertBefore(element,container.firstChild)
+		let items = document.getElementsByClassName('divlist')
+        let last = items.length - 1
+		items[last].remove()
+
+    }
 </script>
+</body>
 </html>	
