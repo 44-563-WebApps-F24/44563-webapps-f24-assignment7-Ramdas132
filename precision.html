@@ -26,13 +26,14 @@ function recordTime() {
     console.log("Stop Time:", stopTime); 
 }
 document.getElementById("stopBtn").onclick = recordTime;
-
+let count;
 function startTime() {
-    document.getElementById("counter").innerHTML = "Count: 0";
+    count = Math.floor(Math.random() * 9) + 2;
+    document.getElementById("counter").innerHTML = `Count: ${count}`;
     stopTime = undefined; 
     for (let i = 0; i < 5; i++) {
         setTimeout(() => {
-            document.getElementById("counter").innerHTML = "Count: " + i;
+            document.getElementById("counter").innerHTML = "Count: "+count + i;
         }, (4 - i) * 1000); 
     }
     setTimeout(() => {
